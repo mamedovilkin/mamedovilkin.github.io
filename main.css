@@ -1,5 +1,9 @@
-.nav-link {
-    height: 72px;
-    width: 72px;
+.card-image {
+    height: 32px;
+    width: 32px;
     object-fit: scale-down;
+}
+
+.card:hover {
+    cursor: pointer;
 }
