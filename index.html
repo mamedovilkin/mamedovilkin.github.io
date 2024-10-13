@@ -17,43 +17,79 @@
             <div class="container">
                 <nav class="navbar">
                     <a class="navbar-brand text-bg-dark" href="/">
-                        <img src="https://avatars.githubusercontent.com/u/178507784" width="32" height="32" style="border-radius: 16px;">
+                        <img src="https://avatars.githubusercontent.com/u/178507784" width="32" height="32" style="border-radius: 4px;">
                         Ilkin Mamedov
                     </a>
                     <ul class="nav col-md-4 justify-content-end list-unstyled d-flex">
                         <li class="ms-3"><a class="text-bg-dark" href="https://t.me/mamedovilkin" target="_blank"><i class="fa-brands fa-telegram fa-2xl"></i></a></li>
                         <li class="ms-3"><a class="text-bg-dark" href="https://github.com/mamedovilkin" target="_blank"><i class="fa-brands fa-github fa-2xl"></i></a></li>
+                        <li class="ms-3"><a class="text-bg-dark" href="https://open.spotify.com/user/31miydbs2kgmocyr2s2ubwysdu64?si=ce13333dd9df48cd" target="_blank"><i class="fa-brands fa-spotify fa-2xl"></i></a></li>
+                        <li class="ms-3"><a class="text-bg-dark" href="https://www.youtube.com/@ilkinmamedov0208" target="_blank"><i class="fa-brands fa-youtube fa-2xl"></i></a></li>
                     </ul>
                 </nav>  
             </div>
         </header>
 
         <main class="flex-fill">
-            <div class="container">
-                <div class="d-flex flex-column min-vh-100">
+            <div class="container h-100">
+                <div data-bs-spy="scroll" data-bs-target="#list-example" data-bs-smooth-scroll="true" class="scrollspy-example" tabindex="0" class="d-flex flex-column min-vh-100">
 
                     <br>
 
-                    <div class="cv bg-body-tertiary p-5 rounded mt-3">
-                        <h1>Are you HR?</h1>
-                        <p class="lead">You can download my CV here from the link below.</p>
-                        <a class="btn btn-lg btn-outline-dark" href="/" role="button">Download CV</a>
+                    <div class="row h-100 justify-content-top align-items-top">
+                        <div class="col">
+                            <div class="bg-body-tertiary p-5 rounded">
+                                <h1>Are you HR?</h1>
+                                <p class="lead">You can download my CV here from the link below.</p>
+                                <a class="btn btn-lg btn-outline-dark" href="/" role="button">Download CV</a>
+                            </div>
+                        </div>
+
+                        <div class="col">
+                            <h3>Go to</h3>
+                            <div id="list-sections" class="list-group">
+                                <a class="list-group-item list-group-item-dark list-group-item-action" href="#overview-item">Overview</a>
+                                <a class="list-group-item list-group-item-dark list-group-item-action" href="#projects-item">Projects  <span class="badge rounded-pill bg-secondary">0</span></a>
+                                <a class="list-group-item list-group-item-dark list-group-item-action" href="#instruments-item">Instruments <span class="badge rounded-pill bg-secondary">5</span></a>
+                                <a class="list-group-item list-group-item-dark list-group-item-action" href="#certificates-item">Certificates  <span class="badge rounded-pill bg-secondary">0</span></a>
+                                <a class="list-group-item list-group-item-dark list-group-item-action" href="#links-item">Links <span class="badge rounded-pill bg-secondary">4</span></a>
+                            </div>
+                        </div>
                     </div>
 
                     <br>
-                    <h1>Hi, I'm Ilkin 👋</h1>
-                    <p class="text-body-secondary">I'm an Android Developer. Here you can find my pet projects or instruments I use and other stuff I do.</p>
-                    
+
+                    <div class="row h-100 justify-content-center align-items-center">
+
+                        <div class="col">
+                            <img src="https://avatars.githubusercontent.com/u/178507784" width="100" height="100" style="border-radius: 10px;">
+                        </div>
+
+                        <div class="col-8">
+                            <h1 id="overview-item" class="m-0 p-0">Hi, I'm Ilkin 👋</h1>
+                            <p class="text-body-secondary m-0 p-0">I'm an Android Developer.</p>
+                            <p class="text-body-secondary m-0 p-0">Welcome to my website! Here you can find my pet projects or instruments I use and other stuff I do.</p>
+                        </div>
+
+                        <div class="col"></div>
+                        <div class="col"></div>
+                        <div class="col"></div>
+
+                    </div>
+
                     <hr>
 
-                    <h1>Projects</h1>
-                    <p class="text-body-secondary">No projects yet.</p>
+                    <h1 id="projects-item">Projects</h1>
+                    <p class="text-body-secondary m-0 p-0">No projects yet.</p>
 
                     <hr>
 
-                    <h1>Instruments</h1>
+                    <h1 id="instruments-item">Instruments</h1>
+                    <p class="text-body-secondary">List of tools I use for my projects.</p>
                     <p class="text-body-secondary">
-                        List of tools I use for my projects.
+                        <span class="badge rounded-pill bg-secondary">
+                            5 sections
+                        </span>
                         <span class="badge rounded-pill bg-secondary">
                             15 instruments
                         </span>
@@ -255,8 +291,24 @@
 
                     <hr>
 
-                    <h1>Certificates</h1>
-                    <p class="text-body-secondary">No certificates yet.</p>
+                    <h1 id="certificates-item">Certificates</h1>
+                    <p class="text-body-secondary m-0 p-0">No certificates yet.</p>
+
+                    <hr>
+
+                    <h1 id="links-item">Links</h1>
+                    <p class="text-body-secondary">Follow me on social media.</p>
+                    <p class="text-body-secondary mb-0">
+                        <span class="badge rounded-pill bg-secondary">
+                            4 links
+                        </span>
+                    </p>
+                    <ul class="list m-0 p-0">
+                        <a class="text-body-secondary text-decoration-none" href="https://t.me/mamedovilkin" target="_blank"><li class="list-group-item mt-4 mb-4"><i class="fa-brands fa-telegram fa-2xl me-2"></i>@mamedovilkin</li></a>
+                        <a class="text-body-secondary text-decoration-none" href="https://github.com/mamedovilkin" target="_blank"><li class="list-group-item mt-4 mb-4"><i class="fa-brands fa-github fa-2xl me-2"></i>@mamedovilkin</li></a>
+                        <a class="text-body-secondary text-decoration-none" href="https://open.spotify.com/user/31miydbs2kgmocyr2s2ubwysdu64?si=ce13333dd9df48cd" target="_blank"><li class="list-group-item mt-4 mb-4"><i class="fa-brands fa-spotify fa-2xl me-2"></i>31miydbs2kgmocyr2s2ubwysdu64</li></a>
+                        <a class="text-body-secondary text-decoration-none" href="https://www.youtube.com/@ilkinmamedov0208" target="_blank"><li class="list-group-item mt-4 mb-4"><i class="fa-brands fa-youtube fa-2xl me-2"></i>@ilkinmamedov0208</li></a>
+                    </ul>
 
                 </div>
             </div>
@@ -265,9 +317,9 @@
         <footer class="d-flex flex-wrap justify-content-between py-4 border-top">
             <div class="container">
                 <div class="d-flex bd-highlight">
-                    <div class="p-2 flex-grow-1 bd-highlight">
-                        <a class="mb-3 me-2 mb-md-0 text-body-secondary text-decoration-none lh-1" href="/">
-                            <img src="https://avatars.githubusercontent.com/u/178507784" width="32" height="32" style="border-radius: 16px;">
+                    <div class="flex-grow-1 bd-highlight">
+                        <a class="text-body-secondary text-decoration-none" href="/">
+                            <img src="https://avatars.githubusercontent.com/u/178507784" width="32" height="32" style="border-radius: 4px;">
                             &copy; 2024 Ilkin Mamedov
                         </a>
                     </div>
@@ -275,6 +327,8 @@
                         <ul class="nav">
                             <li class="ms-3"><a class="text-body-secondary" href="https://t.me/mamedovilkin" target="_blank"><i class="fa-brands fa-telegram fa-2xl"></i></a></li>
                             <li class="ms-3"><a class="text-body-secondary" href="https://github.com/mamedovilkin" target="_blank"><i class="fa-brands fa-github fa-2xl"></i></a></li>
+                            <li class="ms-3"><a class="text-body-secondary" href="https://open.spotify.com/user/31miydbs2kgmocyr2s2ubwysdu64?si=ce13333dd9df48cd" target="_blank"><i class="fa-brands fa-spotify fa-2xl"></i></a></li>
+                            <li class="ms-3"><a class="text-body-secondary" href="https://www.youtube.com/@ilkinmamedov0208" target="_blank"><i class="fa-brands fa-youtube fa-2xl"></i></a></li>
                         </ul>
                     </div>
                 </div>
