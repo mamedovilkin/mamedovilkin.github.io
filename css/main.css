@@ -1,3 +1,15 @@
+header {
+    height: 70px;
+}
+
+.navbar-brand > img, .text-body-secondary > img {
+    border-radius: 4px;
+}
+
+.overview-img {
+    border-radius: 15px;
+}
+
 .card-image {
     height: 32px;
     width: 32px;
