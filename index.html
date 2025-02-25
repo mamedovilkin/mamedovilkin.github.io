@@ -1,5 +1,5 @@
 <!doctype html>
-<html lang="en">
+<html lang="en" class="h-100">
 
 <head>
   <meta charset="utf-8">
@@ -13,24 +13,25 @@
   <link rel="stylesheet" href="css/main.css">
 </head>
 
-<body>
-
-  <div class="container-fluid">
-    <nav class="navbar navbar-expand-lg mb-5">
-      <div class="container">
-        <a href="/" class="navbar-brand fw-semibold d-flex align-items-center">
-          ILKIN MAMEDOV
-        </a>
-        <ul class="nav nav-underline">
-          <li class="nav-item">
-            <a class="nav-link link-dark active" href="/">EN</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link link-dark" href="/ru">RU</a>
-          </li>
-        </ul>
-      </div>
-    </nav>
+<body class="d-flex flex-column h-100">
+  <main class="flex-shrink-0">
+    <div class="container-fluid">
+      <nav class="navbar navbar-expand-lg mb-5">
+        <div class="container">
+          <a href="/" class="navbar-brand fw-semibold d-flex align-items-center">
+            ILKIN MAMEDOV
+          </a>
+          <ul class="nav nav-underline">
+            <li class="nav-item">
+              <a class="nav-link link-dark active" href="/">EN</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link link-dark" href="/ru">RU</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </div>
 
     <div class="container">
       <div class="row mb-5">
@@ -84,13 +85,13 @@
         </div>
       </div>
     </div>
-    
-    <footer class="my-5">
-      <div class="container text-body-secondary text-center">
-        ILKIN MAMEDOV &copy; <span id="year"></span>
-      </div>
-    </footer>
-  </div>
+  </main>
+
+  <footer class="footer mt-auto py-5 my-5">
+    <div class="container text-body-secondary text-center">
+      ILKIN MAMEDOV &copy; <span id="year"></span>
+    </div>
+  </footer>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
   <script>
     document.getElementById("year").innerHTML = new Date().getFullYear();
