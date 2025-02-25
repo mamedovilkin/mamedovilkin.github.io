@@ -22,10 +22,10 @@
           </a>
           <ul class="nav nav-underline">
             <li class="nav-item">
-              <a class="nav-link link-dark active" href="/404/">EN</a>
+              <a id="en-link" class="nav-link link-dark active" href="/404/">EN</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link link-dark" href="/ru/404/">RU</a>
+              <a  id="ru-link" class="nav-link link-dark" href="/ru/404/">RU</a>
             </li>
           </ul>
         </div>
@@ -58,6 +58,20 @@
       document.getElementById("message").innerText = "Упс! Страница, которую вы ищете, не существует.";
       document.getElementById("main-link").innerText = "Вернуться на главную страницу";
       document.getElementById("main-link").href = "/ru";
+
+      document.querySelectorAll("link[rel='icon']").forEach(link => {
+            link.href = link.href.replace("ru/images/favicon.ico", "images/favicon.ico");
+      });
+
+      document.querySelectorAll("link[rel='stylesheet']").forEach(link => {
+            link.href = link.href.replace("ru/css/main.css", "css/main.css");
+      });
+
+      document.getElementById("en-link").className = "nav-link link-dark";
+      document.getElementById("ru-link").className = "nav-link link-dark active";
+    } else {
+      document.getElementById("en-link").className = "nav-link link-dark active";
+      document.getElementById("ru-link").className = "nav-link link-dark";
     }
 
     document.getElementById("year").innerHTML = new Date().getFullYear();
