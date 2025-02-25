@@ -56,15 +56,17 @@
     if (path.includes("/ru")) {
       document.getElementById("brand").href = "/ru";
       document.getElementById("message").innerText = "Упс! Страница, которую вы ищете, не существует.";
-      document.getElementById("main-link").innerText = "Вернуться на главную страницу";
+      document.getElementById("main-link").innerText = "<i class=\"fa-solid fa-arrow-left-long me-2\"></i>Вернуться на главную страницу";
       document.getElementById("main-link").href = "/ru";
 
       document.querySelectorAll("link[rel='icon']").forEach(link => {
             link.href = link.href.replace("ru/images/favicon.ico", "images/favicon.ico");
+            link.href = link.href.replace("ru/404/images/favicon.ico", "images/favicon.ico");
       });
 
       document.querySelectorAll("link[rel='stylesheet']").forEach(link => {
             link.href = link.href.replace("ru/css/main.css", "css/main.css");
+            link.href = link.href.replace("ru/404/css/main.css", "css/main.css");
       });
 
       document.getElementById("en-link").className = "nav-link link-dark";
