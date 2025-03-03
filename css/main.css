@@ -1,0 +1,26 @@
+.container-fluid {
+    padding: 0px;
+    margin: 0px;
+}
+
+.avatar {
+    width: 150px;
+    height: 150px;
+    border-radius: 75px;
+}
+
+.btn {
+    border-radius: 50px;
+}
+
+.card {
+    border: 0px;
+    border-radius: 20px;
+    box-shadow: 2px 2px 16px 8px rgba(128, 128, 128, 0.1);
+}
+
+.card-image {
+    width: 64px;
+    height: 64px;
+    border-radius: 16px;
+}
