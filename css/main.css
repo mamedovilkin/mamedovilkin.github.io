@@ -24,3 +24,9 @@
     height: 64px;
     border-radius: 16px;
 }
+
+.main {
+    border: 1px solid #FF5449;
+    border-radius: 20px;
+    box-shadow: 2px 2px 16px 8px rgba(255, 84, 73, 0.1);
+}
